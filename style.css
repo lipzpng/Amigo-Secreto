@@ -58,13 +58,13 @@ p {
     padding: 10px;
     border: 2px solid black;
     border-radius: 20px;
-    width: 270px;
-    height: 270px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
 .campos{
-    margin-left: 15px;
     margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 #titleBem {
@@ -87,6 +87,7 @@ p {
 #buttonAjust {
     margin-top: 40px;
     margin-left: 20px;
+    margin-bottom: 5px;
 }
 
 .button {
@@ -96,7 +97,13 @@ p {
     font-weight: bold;
     border: 0px;
     border-radius: 20px;
-    background-color: #374c36;
+    background-color: #2a3f29;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: #496447;
 }
 
 #button2 {
@@ -112,4 +119,52 @@ p {
 
 a {
     color: black;
+}
+
+/*--------- Cria Grupo.css ---------*/
+
+#criaTitle {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+        'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+.criaContent {
+    margin: 100px;
+}
+
+#linha1, #linha2 {
+    display: flex;
+}
+
+#campoCria1, #campoCria2, #campoCria3 {
+    margin-right: 250px;
+}
+
+#campoCria4, #campoCria5 {
+    margin-top: 150px;
+    margin-right: 250px;
+}
+
+#selectPhoto {
+    margin-top: 120px;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    margin-top: 5px;
+    margin-left: 80px;
+    width: 50px; /* Largura do círculo */
+    height: 50px; /* Altura do círculo */
+    border: 2px solid black; /* Borda de 2px preta */
+    border-radius: 50%; /* Borda para fazer o elemento ser um círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px; /* Tamanho do sinal de "+" */
 }
