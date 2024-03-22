@@ -99,11 +99,12 @@ p {
     border-radius: 20px;
     background-color: #2a3f29;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    transition: 0.2s ease;
 }
 
 .button:hover {
     cursor: pointer;
-    background-color: #496447;
+    transform: translateY(-3px);
 }
 
 #button2 {
@@ -115,13 +116,33 @@ p {
         'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
         'Open Sans', 'Helvetica Neue', sans-serif;
     margin-left: 90px;
+    transition: 0.2s ease;
+}
+
+#login:hover {
+    transform: translateY(-3px);
 }
 
 a {
     color: black;
 }
 
-/*--------- Cria Grupo.css ---------*/
+a:hover {
+    color: blue;
+}
+
+/*------------------------------------ Cria Grupo.css ------------------------------------*/
+
+.mainContainerCria {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#criaContainer {
+    margin-top: 120px;
+    margin-left: 120px;
+}
 
 #criaTitle {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 
@@ -129,29 +150,31 @@ a {
         'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
     font-size: 30px;
-    margin-top: 30px;
-    margin-left: 100px;
+    margin-top: 50px;
+    margin-left: 50px;
 }
 
 .criaContent {
-    margin: 100px;
+    margin-top: 100px;
+    margin-left: 120px;
 }
 
 #linha1, #linha2 {
     display: flex;
 }
 
-#campoCria1, #campoCria2, #campoCria3 {
-    margin-right: 250px;
+#campoCria1, #campoCria2 {
+    margin-right: 150px;
 }
 
 #campoCria4, #campoCria5 {
     margin-top: 150px;
-    margin-right: 250px;
+    margin-right: 150px;
 }
 
 #selectPhoto {
     margin-top: 120px;
+    margin-left: 10px;
     justify-content: center;
     align-items: center;
 }
@@ -159,12 +182,56 @@ a {
 .circle {
     margin-top: 5px;
     margin-left: 80px;
-    width: 50px; /* Largura do círculo */
-    height: 50px; /* Altura do círculo */
-    border: 2px solid black; /* Borda de 2px preta */
-    border-radius: 50%; /* Borda para fazer o elemento ser um círculo */
+    width: 50px;
+    height: 50px;
+    border: 2px solid black; 
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 15px; /* Tamanho do sinal de "+" */
+    font-size: 15px;
+}
+
+.butAjustCria {
+    margin-top: 100px;
+    margin-left: 1000px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+/*------------------------------------ Inicio.css ------------------------------------*/
+
+.mainContainerInicio {
+    display: flex;
+    justify-content: center;
+}
+
+#inicioContainer {
+    width: 200px;
+}
+
+#buttonSmall {
+    margin-top: 10px;
+    width: 200px;
+}
+
+.seuAmigo {
+    margin-top: 100px;
+}
+
+.participante {
+    height: 40px;
+    width: 200px;
+    margin-top: 10px;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    transition: 0.2s ease;
+}
+
+.participante:hover {
+    transform: translateY(-3px);
 }
