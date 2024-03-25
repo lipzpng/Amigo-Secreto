@@ -159,7 +159,7 @@ a:hover {
     margin-left: 120px;
 }
 
-#linha1, #linha2 {
+#linha1, #linha2, #linha3 {
     display: flex;
 }
 
@@ -173,13 +173,14 @@ a:hover {
 }
 
 #selectPhoto {
-    margin-top: 120px;
+    margin-top: 140px;
     margin-left: 10px;
     justify-content: center;
     align-items: center;
 }
 
 .circle {
+    cursor: pointer;
     margin-top: 5px;
     margin-left: 80px;
     width: 50px;
@@ -196,7 +197,7 @@ a:hover {
     margin-top: 100px;
     margin-left: 1000px;
     margin-right: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 /*------------------------------------ Inicio.css ------------------------------------*/
@@ -218,10 +219,23 @@ a:hover {
     width: 250px;
 }
 
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#logoContainer {
+    height: 140px;
+    width: 140px;
+    margin: 0px;
+    cursor: auto;
+}
+
 .seuAmigo {
     display: flex;
     justify-content: center;
-    margin-top: 140px;
+    margin-top: 40px;
 }
 
 .participante {
@@ -244,7 +258,7 @@ a:hover {
 .pin {
     display: flex;
     justify-content: center;
-    margin-top: 120px;
+    margin-top: 40px;
 }
 
 .qrContainer {
@@ -312,4 +326,103 @@ a:hover {
 
 .partiButton:hover {
     transform: translateY(-3px);
+}
+
+/*------------------------------------ Config.css ------------------------------------*/
+
+.configContent {
+    margin-top: 90px;
+    margin-left: 120px;
+}
+
+#linhaConfig1, #linhaConfig2, #linhaConfig3 {
+    display: flex;
+    margin-left: 90px;
+}
+
+#campoConfig4, #campoConfig5 {
+    margin-top: 100px;
+    margin-right: 150px;
+}
+
+#selectPhotoConfig {
+    margin-top: 90px;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#campoConfig6, #campoConfig7 {
+    margin-top: 80px;
+    margin-right: 148px;
+}
+
+#delButton {
+    width: 120px;
+    font-weight: bold;
+    background-color: #9c1e1e;
+    margin-right: 1030px;
+}
+
+.butAjustConfig {
+    display: flex;
+    margin-top: 130px;
+    margin-right: 50px;
+}
+
+/*------------------------------------ ConfigUser.css ------------------------------------*/
+
+.configUserContent {
+    display: flex;
+    justify-content: center;
+}
+
+#linhaConfigUser {
+    margin-top: 100px;
+    width: 240px;
+}
+
+.butAjustConfigUser {
+    display: flex;
+    margin-top: 210px;
+    margin-right: 50px;
+    margin-left: 1270px;
+}
+
+/*------------------------------------ Lista.css ------------------------------------*/
+
+.listaContent {
+    margin-top: 70px;
+    margin-left: 100px;
+    height: 400px;
+}
+
+#listaTitle {
+    margin-top: 50px;
+    font-size: 17px;
+}
+
+.listaButton {
+    height: 40px;
+    width: 240px;
+    margin-top: 20px;
+    margin-right: 10px;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    transition: 0.2s ease;
+}
+
+.listaButton:hover {
+    transform: translateY(-3px);
+}
+
+.butAjustLista {
+    display: flex;
+    margin-top: 90px;
+    margin-right: 50px;
+    margin-left: 1270px;
 }

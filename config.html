@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/icon2.png">
+
+    <title>Configuração</title>
+</head>
+<body>
+
+    <div class="mainContainerInicio">
+        <div class="container" id="inicioContainerLeft">
+            <button class="button" id="buttonSmall" onclick="window.location.href='inicio.html';">Início</button>
+            <button class="button" id="buttonSmall" onclick="window.location.href='config.html';">Configuração</button>
+            <button class="button" id="buttonSmall" onclick="window.location.href='lista.html';">Lista de Presentes</button>
+
+            <div class="logo">
+                <div class="circle" id="logoContainer">+</div>
+            </div>
+
+            <div class="seuAmigo">
+                <p>Seu amigo secreto:</p>
+            </div>
+            <button class="participante">Gato</button>
+
+            <div class="pin">
+                <p>Pin do grupo - 1234</p>
+            </div>
+
+            <div class="qrContainer">
+                <img src="assets/qrCode.png" id="qrCode">
+            </div>
+            <button class="button" id="buttonSmallComp" onclick="window.location.href='inicio.html';">Compartilhar</button>
+        </div>
+        
+        <div class="container" id="inicioContainerMiddle">
+            <div class="title" id="iniTitle">
+                <p>Configuração</p>
+            </div>
+
+            <div class="configContent">
+                <div id="linhaConfig1">
+                    <div id="campoCria1">
+                        <p>Nome do grupo:</p>
+                        <input class="textBox" type="text" placeholder=" Nome">
+                    </div>
+                    <div id="campoCria2">
+                        <p>Valor Maximo de presente:</p>
+                        <input class="textBox" type="text" placeholder=" R$">
+                    </div>
+                    <div id="campoCria3">
+                        <p>Descrição do grupo:</p>
+                        <input class="textBox" type="text" placeholder=" Descrição">
+                    </div>
+                </div>
+
+                <div id="linhaConfig2">
+                    <div id="campoConfig4">
+                        <p>Data do sorteio:</p>
+                        <input class="textBox" type="date">
+                    </div>
+                    <div id="campoConfig5">
+                        <p>Tipo de amigo secreto:</p>
+                        <input class="textBox" type="text" placeholder=" Ex: Amigo Chocolate">
+                    </div>
+                    <div id="selectPhotoConfig">
+                        <p>Selecione uma imagem para logo</p>
+                        <div class="circle">+</div>
+                    </div>
+                </div>
+
+                <div id="linhaConfig3">
+                    <div id="campoConfig6">
+                        <p>Seu nome:</p>
+                        <input class="textBox" type="text" placeholder=" Nome">
+                    </div>
+                    <div id="campoConfig7">
+                        <p>Seu apelido:</p>
+                        <input class="textBox" type="text" placeholder=" Apelido">
+                    </div>
+                </div>
+
+                <div class="butAjustConfig">
+                    <button class="button" id="delButton" onclick="window.location.href='inicio.html';">Excluir grupo</button>
+                    <button class="button" onclick="window.location.href='inicio.html';">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
