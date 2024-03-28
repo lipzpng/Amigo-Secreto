@@ -86,7 +86,6 @@ p {
 
 #buttonAjust {
     margin-top: 40px;
-    margin-left: 20px;
     margin-bottom: 5px;
 }
 
@@ -107,7 +106,7 @@ p {
     transform: translateY(-3px);
 }
 
-#button2 {
+#entrarGrupoBtn {
     margin-left: 20px;
 }
 
@@ -425,4 +424,81 @@ a:hover {
     margin-top: 90px;
     margin-right: 50px;
     margin-left: 1270px;
+}
+
+/*------------------------------------ Lista.css ------------------------------------*/
+
+#chatTitle {
+    margin-top: 80px;
+    margin-left: 70px;
+    margin-right: 200px;
+}
+
+.chat {
+    margin-top: 40px;
+    margin-left: 10px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.message {
+    flex-grow: 1;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.chatForm {
+    padding: 15px 20px 15px 0px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    bottom: 90px;
+    width: 500px;
+}
+
+.chatInput {
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    flex-grow: 1;
+}
+
+.chatButton {
+    background: none;
+    cursor: pointer;
+    border: none;
+    color: black;
+}
+
+.chatButton > span {
+    font-size: 30px;
+}
+
+.message > div {
+    padding: 10px 15px 10px 15px;
+    width: 100%;
+    max-width: 250px;
+    font-weight: 600;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    line-height: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.messageSelf {
+    color: white;
+    background-color: #2a3f29;
+    border-radius: 20px 20px 0px 20px;
+    align-self: flex-end;
+}
+
+.messageOther {
+    border: 2px solid black;
+    border-radius: 20px 20px 20px 0px;
 }

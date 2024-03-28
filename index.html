@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/icon2.png">
@@ -30,19 +30,18 @@
         <div id="containerAjust">
             <div class="container">
                 <p id="titleBem">Bem-vindo! 👋🏻</p>
-                <div class="campos">
+                <form id="formGrupo" class="campos">
                     <p>Seu nome:</p>
-                    <input class="textBox" type="text" placeholder=" Nome">
+                    <input type="text" class="textBox" placeholder=" Nome" > <!--required-->
                     <p id="spaceField">Escolha seu apelido:</p>
-                    <input class="textBox" type="text" placeholder=" Apelido">
-                </div>
-
-                <table id="buttonAjust">
-                    <tr>
-                        <td><button class="button" onclick="window.location.href='criaGrupo.html';">Criar grupo</button></td>
-                        <td><button class="button" id="button2">Entrar em grupo</button></td>
-                    </tr>
-                </table>
+                    <input type="text" class="textBox" placeholder=" Apelido" > <!--required-->
+                    <table id="buttonAjust">
+                        <tr>
+                            <td><button class="button" id="criarGrupoBtn">Criar grupo</button></td> 
+                            <td><button class="button" id="entrarGrupoBtn">Entrar em grupo</button></td> 
+                        </tr>
+                    </table>
+                </form>
             </div>
 
             <div id="login">
@@ -50,6 +49,24 @@
             </div>
         </div>
     </div>
+
+    <script>
+        document.getElementById("criarGrupoBtn").addEventListener("click", function(event) {
+            if (document.getElementById("formGrupo").checkValidity()) {
+                event.preventDefault(); 
+                window.location.href = "criaGrupo.html"; 
+            } //else {
+            //     //alert("Por favor, preencha todos os campos."); // Mostra uma mensagem de alerta se os campos não estiverem preenchidos
+            // }
+        });
+    
+        document.getElementById("entrarGrupoBtn").addEventListener("click", function(event) {
+            if (document.getElementById("formGrupo").checkValidity()) {
+                event.preventDefault(); // Impede o envio padrão do formulário
+                window.location.href = "";
+            }
+        });
+    </script>
 
 </body>
 </html>

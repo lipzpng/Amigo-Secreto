@@ -12,7 +12,7 @@
 <body>
     
     <div class="mainContainerCria">
-        <div class="container" id="criaContainer">
+        <form class="container" id="criaContainer">
             <div class="title">
                 <p>Criar grupo</p>
             </div>
@@ -21,7 +21,7 @@
                 <div id="linha1">
                     <div id="campoCria1">
                         <p>Nome do grupo:</p>
-                        <input class="textBox" type="text" placeholder=" Nome">
+                        <input class="textBox" type="text" placeholder=" Nome"> <!--required-->
                     </div>
                     <div id="campoCria2">
                         <p>Valor Maximo de presente:</p>
@@ -36,7 +36,7 @@
                 <div id="linha2">
                     <div id="campoCria4">
                         <p>Data do sorteio:</p>
-                        <input class="textBox" type="date">
+                        <input class="textBox" type="date"> <!--required-->
                     </div>
                     <div id="campoCria5">
                         <p>Tipo de amigo secreto:</p>
@@ -49,11 +49,22 @@
                 </div>
 
                 <div class="butAjustCria">
-                    <button class="button" onclick="window.location.href='inicio.html';">Avançar</button>
+                    <button class="button" id="iniButton">Avançar</button>
                 </div>
             </div>
-        </div>
+        </form>
     </div>
+
+    <script>
+        document.getElementById("iniButton").addEventListener("click", function(event) {
+            if (document.getElementById("criaContainer").checkValidity()) {
+                event.preventDefault(); 
+                window.location.href = "inicio.html"; 
+            } //else {
+            //     //alert("Por favor, preencha todos os campos."); // Mostra uma mensagem de alerta se os campos não estiverem preenchidos
+            // }
+        });
+    </script>
     
 </body>
 </html>

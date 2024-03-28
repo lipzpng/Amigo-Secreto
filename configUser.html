@@ -24,7 +24,7 @@
             <div class="seuAmigo">
                 <p>Seu amigo secreto:</p>
             </div>
-            <button class="participante">Gato</button>
+            <button class="participante" onclick="window.location.href='chat.html';">Gato</button>
 
             <div class="pin">
                 <p>Pin do grupo - 1234</p>
@@ -36,7 +36,7 @@
             <button class="button" id="buttonSmallComp" onclick="window.location.href='inicio.html';">Compartilhar</button>
         </div>
         
-        <div class="container" id="inicioContainerMiddle">
+        <form class="container" id="inicioContainerMiddle">
             <div class="title" id="iniTitle">
                 <p>Configuração</p>
             </div>
@@ -54,10 +54,21 @@
                 </div>
             </div>
             <div class="butAjustConfigUser">
-                <button class="button" onclick="window.location.href='inicio.html';">Salvar</button>
+                <button class="button" id="configUserButton">Salvar</button>
             </div>
-        </div>
+        </form>
     </div>
+
+    <script>
+        document.getElementById("configUserButton").addEventListener("click", function(event) {
+            if (document.getElementById("inicioContainerMiddle").checkValidity()) {
+                event.preventDefault(); 
+                window.location.href = "inicio.html"; 
+            } //else {
+            //     //alert("Por favor, preencha todos os campos."); // Mostra uma mensagem de alerta se os campos não estiverem preenchidos
+            // }
+        });
+    </script>
 
 </body>
 </html>

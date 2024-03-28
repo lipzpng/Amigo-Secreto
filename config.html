@@ -24,7 +24,7 @@
             <div class="seuAmigo">
                 <p>Seu amigo secreto:</p>
             </div>
-            <button class="participante">Gato</button>
+            <button class="participante" onclick="window.location.href='chat.html';">Gato</button>
 
             <div class="pin">
                 <p>Pin do grupo - 1234</p>
@@ -33,7 +33,7 @@
             <div class="qrContainer">
                 <img src="assets/qrCode.png" id="qrCode">
             </div>
-            <button class="button" id="buttonSmallComp" onclick="window.location.href='inicio.html';">Compartilhar</button>
+            <button class="button" id="buttonSmallComp">Compartilhar</button>
         </div>
         
         <div class="container" id="inicioContainerMiddle">
@@ -41,7 +41,7 @@
                 <p>Configuração</p>
             </div>
 
-            <div class="configContent">
+            <form class="configContent" id="configForm">
                 <div id="linhaConfig1">
                     <div id="campoCria1">
                         <p>Nome do grupo:</p>
@@ -84,12 +84,23 @@
                 </div>
 
                 <div class="butAjustConfig">
-                    <button class="button" id="delButton" onclick="window.location.href='inicio.html';">Excluir grupo</button>
-                    <button class="button" onclick="window.location.href='inicio.html';">Salvar</button>
+                    <button class="button" id="delButton">Excluir grupo</button>
+                    <button class="button" id="configButton">Salvar</button>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
+
+    <script>
+        document.getElementById("configButton").addEventListener("click", function(event) {
+            if (document.getElementById("configForm").checkValidity()) {
+                event.preventDefault(); 
+                window.location.href = "inicio.html"; 
+            } //else {
+            //     //alert("Por favor, preencha todos os campos."); // Mostra uma mensagem de alerta se os campos não estiverem preenchidos
+            // }
+        });
+    </script>
     
 </body>
 </html>
