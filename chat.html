@@ -37,29 +37,64 @@
             <button class="button" id="buttonSmallComp">Compartilhar</button>
         </div>
         
-        <div class="container" id="inicioContainerMiddle">
-            <div class="title" id="chatTitle">
-                <p>Chat com amigo secreto</p>
-            </div>
-
-            <div class="chat">
-                <div class="message">
-                    <div class="messageSelf">Lisan al-Gaib</div>
-                    <div class="messageOther">
-                        Gato
+        <div class="container" id="chatContainerMiddle">
+            <div class="chatContent">
+                <div>
+                    <div class="title" id="chatTitle">
+                        <p>Chat com amigo secreto</p>
                     </div>
-
+        
+                    <div class="chat" id="chat">
+                        <div class="message">
+                            <div class="messageSelf">Lisan al-Gaib</div>
+                            <div class="messageOther">Gato</div>
+                            <div class="messageSelf">Lisan al-Gaib</div>
+                            <div class="messageOther">Gato</div>
+                            <div class="messageSelf">Lisan al-Gaib</div>
+                            <div class="messageOther">Gato</div>
+                            <div class="messageSelf">Lisan al-Gaib</div>
+                            <div class="messageOther">Gato</div>
+                            <div class="messageSelf">Lisan al-Gaib</div>
+                            <div class="messageOther">Gato</div>
+                            <div class="messageSelf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae voluptate delectus adipisci praesentium eveniet voluptatibus ad, impedit corrupti quibusdam eligendi?</div>
+                            <div class="messageOther">Gato</div>
+                        </div>
+                    </div>
+                    <div class="chatForm">
+                        <input type="text" class="chatInput" placeholder=" Digite sua mensagem">
+                        <button type="submit" class="chatButton">
+                            <span class="material-symbols-outlined">send</span>
+                        </button>
+                    </div>
                 </div>
-
-                <div class="chatForm">
-                    <input type="text" class="chatInput" placeholder=" Digite sua mensagem">
-                    <button type="submit" class="chatButton">
-                        <span class="material-symbols-outlined">send</span>
-                    </button>
+                <div class="showLista">
+                    <div class="chatLista">
+                        <p>Lista de presentes</p>
+                        <button class="presentLabel">RTX 3090</button>
+                        <button class="presentLabel">s24 Ultra</button>
+                        <button class="presentLabel">LEGO Dune - 10327</button>
+                        <button class="presentLabel">s24 Ultra</button>
+                        <button class="presentLabel">LEGO Dune - 10327</button>
+                        <button class="presentLabel">RTX 3090</button>
+                        <button class="presentLabel">s24 Ultra</button>
+                        <button class="presentLabel">LEGO Dune - 10327</button>
+                        <button class="presentLabel">s24 Ultra</button>
+                        <button class="presentLabel">LEGO Dune - 10327</button>
+                    </div>
                 </div>
             </div>
+
         </div>
     </div>
+
+    <script>
+        function scrollToEnd() {
+            var element = document.getElementById("chat");
+            element.scrollTop = element.scrollHeight;
+        }
+    
+        window.onload = scrollToEnd;
+    </script>
 
 </body>
 </html>

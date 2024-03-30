@@ -428,37 +428,62 @@ a:hover {
 
 /*------------------------------------ Lista.css ------------------------------------*/
 
+#chatContainerMiddle {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-right: 60px;
+}
+
 #chatTitle {
     margin-top: 80px;
     margin-left: 70px;
-    margin-right: 200px;
+    margin-right: 150px;
 }
 
 .chat {
+    overflow-y: scroll;
+    overflow-x: hidden;
     margin-top: 40px;
-    margin-left: 10px;
-    height: 600px;
+    margin-left: 30px;
+    height: 550px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
+.chat::-webkit-scrollbar {
+    width: 10px;
+}
+
+.chat::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    /* display: none; */
+}
+
+.chat::-webkit-scrollbar-thumb {
+    background: #2a3f29;
+    border-radius: 10px;
+}
+
+.chatContent {
+    display: flex;
+}
+
 .message {
     flex-grow: 1;
-    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    width: 700px;
 }
 
 .chatForm {
-    padding: 15px 20px 15px 0px;
+    padding: 15px 20px 0px 25px;
     display: flex;
     align-items: center;
     gap: 10px;
-    position: fixed;
-    bottom: 90px;
-    width: 500px;
+    width: 700px;
 }
 
 .chatInput {
@@ -483,7 +508,7 @@ a:hover {
 .message > div {
     padding: 10px 15px 10px 15px;
     width: 100%;
-    max-width: 250px;
+    max-width: 280px;
     font-weight: 600;
     margin-right: 10px;
     margin-bottom: 10px;
@@ -501,4 +526,50 @@ a:hover {
 .messageOther {
     border: 2px solid black;
     border-radius: 20px 20px 20px 0px;
+}
+
+.showLista {
+    display: flex;
+    align-items: center;
+}
+
+.chatLista {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+        'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: bold; 
+    margin: 20px 60px 20px 240px;
+    padding:  10px 10px 10px 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    width: 350px;
+    align-items: center;
+}
+
+.chatLista > p {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.presentLabel {
+    height: 55px;
+    width: 270px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    transition: 0.2s ease;
+}
+
+.presentLabel:hover {
+    transform: translateY(-3px);
 }
