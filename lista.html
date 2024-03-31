@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/icon2.png">
 
@@ -11,49 +12,74 @@
 </head>
 <body>
     
-    <div class="mainContainerInicio">
-        <div class="container" id="inicioContainerLeft">
-            <button class="button" id="buttonSmall" onclick="window.location.href='inicio.html';">Início</button>
-            <button class="button" id="buttonSmall" onclick="window.location.href='config.html';">Configuração</button>
-            <button class="button" id="buttonSmall" onclick="window.location.href='lista.html';">Lista de Presentes</button>
-
-            <div class="logo">
-                <div class="circle" id="logoContainer">+</div>
+    <div class="mainTop">
+        <div class="mainContainerInicio">
+            <div class="container" id="inicioContainerLeft">
+                <button class="button" id="buttonSmall" onclick="window.location.href='inicio.html';">Início</button>
+                <button class="button" id="buttonSmall" onclick="window.location.href='config.html';">Configuração</button>
+                <button class="button" id="buttonSmall" onclick="window.location.href='lista.html';">Lista de Presentes</button>
+    
+                <div class="logo">
+                    <div class="circle" id="logoContainer">+</div>
+                </div>
+    
+                <div class="seuAmigo">
+                    <p>Seu amigo secreto:</p>
+                </div>
+                <button class="participante" onclick="window.location.href='chat.html';">Gato</button>
+    
+                <div class="pin">
+                    <p>Pin do grupo - 1234</p>
+                </div>
+    
+                <div class="qrContainer">
+                    <img src="assets/qrCode.png" id="qrCode">
+                </div>
+                <button class="button" id="buttonSmallComp">Compartilhar</button>
             </div>
-
-            <div class="seuAmigo">
-                <p>Seu amigo secreto:</p>
+            
+            <div class="container" id="inicioContainerMiddle">
+                <div class="title" id="iniTitle">
+                    <p>Lista de Presentes</p>
+                </div>
+    
+                <div class="listaContent">
+                    <div id="listaTitle">
+                        <p>Crie sua lista de presentes</p>
+                    </div>
+                    <div class="lista">
+                        <button class="listaButton">+  Adicionar presente</button>
+                    </div>
+                </div>
+                <div class="butAjustLista">
+                    <button class="button" onclick="window.location.href='inicio.html';">Salvar</button>
+                </div>
             </div>
-            <button class="participante" onclick="window.location.href='chat.html';">Gato</button>
-
-            <div class="pin">
-                <p>Pin do grupo - 1234</p>
-            </div>
-
-            <div class="qrContainer">
-                <img src="assets/qrCode.png" id="qrCode">
-            </div>
-            <button class="button" id="buttonSmallComp">Compartilhar</button>
         </div>
-        
-        <div class="container" id="inicioContainerMiddle">
-            <div class="title" id="iniTitle">
-                <p>Lista de Presentes</p>
+        <div class="inicioContainerBottom">
+            <img class="logoBottom" src="assets/icon2.png">
+            <div id="titleBottom" onclick="recarregarPagina()">
+                <p>Amigo Secreto</p>
+            </div>
+            <div class="insta" onclick="openLink('https://www.instagram.com/lipz.png/')">
+                <i class="fa fa-instagram" style="font-size:48px"></i>
             </div>
 
-            <div class="listaContent">
-                <div id="listaTitle">
-                    <p>Crie sua lista de presentes</p>
-                </div>
-                <div class="lista">
-                    <button class="listaButton">+  Adicionar presente</button>
-                </div>
-            </div>
-            <div class="butAjustLista">
-                <button class="button" onclick="window.location.href='inicio.html';">Salvar</button>
-            </div>
         </div>
     </div>
+
+    <script>
+        document.getElementById("buttonSmallComp").addEventListener("click", function(event) {
+            alert("Seu link de compartilhamento de grupo é:");
+        });
+
+        function recarregarPagina() {
+            location.reload(true); //true pra forçar a limpar cache
+        }
+        function openLink(url) {
+            window.open(url, '_blank');
+        }
+    </script>
 
 </body>
 </html>

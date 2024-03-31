@@ -201,6 +201,11 @@ a:hover {
 
 /*------------------------------------ Inicio.css ------------------------------------*/
 
+.mainTop {
+    display: flex;
+    flex-direction: column;
+}
+
 .mainContainerInicio {
     display: flex;
     justify-content: center;
@@ -208,9 +213,8 @@ a:hover {
 
 #inicioContainerLeft {
     width: 250px;
-    margin-top: 80px;
+    margin-top: 40px;
     margin-left: 60px;
-    margin-bottom: 80px;
 }
 
 #buttonSmall {
@@ -279,8 +283,7 @@ a:hover {
 }
 
 #inicioContainerMiddle {
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 40px;
     margin-right: 60px;
 }
 
@@ -325,6 +328,32 @@ a:hover {
 
 .partiButton:hover {
     transform: translateY(-3px);
+}
+
+.inicioContainerBottom {
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    margin: 20px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.logoBottom {
+    width: 50px;
+}
+
+#titleBottom {
+    font-weight: 500;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.insta {
+    cursor: pointer;
 }
 
 /*------------------------------------ Config.css ------------------------------------*/
@@ -426,11 +455,11 @@ a:hover {
     margin-left: 1270px;
 }
 
-/*------------------------------------ Lista.css ------------------------------------*/
+/*------------------------------------ Chat.css ------------------------------------*/
 
 #chatContainerMiddle {
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 40px;
+    margin-bottom: 20px;
     margin-right: 60px;
 }
 

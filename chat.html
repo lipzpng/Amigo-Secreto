@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/icon2.png">
@@ -12,76 +13,89 @@
 </head>
 <body>
     
-    <div class="mainContainerInicio" id="chatContainer">
-        <div class="container" id="inicioContainerLeft">
-            <button class="button" id="buttonSmall" onclick="window.location.href='inicio.html';">Início</button>
-            <button class="button" id="buttonSmall" onclick="window.location.href='config.html';">Configuração</button>
-            <button class="button" id="buttonSmall" onclick="window.location.href='lista.html';">Lista de Presentes</button>
-
-            <div class="logo">
-                <div class="circle" id="logoContainer">+</div>
+    <div class="mainTop">
+        <div class="mainContainerInicio" id="chatContainer">
+            <div class="container" id="inicioContainerLeft">
+                <button class="button" id="buttonSmall" onclick="window.location.href='inicio.html';">Início</button>
+                <button class="button" id="buttonSmall" onclick="window.location.href='config.html';">Configuração</button>
+                <button class="button" id="buttonSmall" onclick="window.location.href='lista.html';">Lista de Presentes</button>
+    
+                <div class="logo">
+                    <div class="circle" id="logoContainer">+</div>
+                </div>
+    
+                <div class="seuAmigo">
+                    <p>Seu amigo secreto:</p>
+                </div>
+                <button class="participante" onclick="window.location.href='chat.html';">Gato</button>
+    
+                <div class="pin">
+                    <p>Pin do grupo - 1234</p>
+                </div>
+    
+                <div class="qrContainer">
+                    <img src="assets/qrCode.png" id="qrCode">
+                </div>
+                <button class="button" id="buttonSmallComp">Compartilhar</button>
             </div>
-
-            <div class="seuAmigo">
-                <p>Seu amigo secreto:</p>
-            </div>
-            <button class="participante" onclick="window.location.href='chat.html';">Gato</button>
-
-            <div class="pin">
-                <p>Pin do grupo - 1234</p>
-            </div>
-
-            <div class="qrContainer">
-                <img src="assets/qrCode.png" id="qrCode">
-            </div>
-            <button class="button" id="buttonSmallComp">Compartilhar</button>
-        </div>
-        
-        <div class="container" id="chatContainerMiddle">
-            <div class="chatContent">
-                <div>
-                    <div class="title" id="chatTitle">
-                        <p>Chat com amigo secreto</p>
+            
+            <div class="container" id="chatContainerMiddle">
+                <div class="chatContent">
+                    <div>
+                        <div class="title" id="chatTitle">
+                            <p>Chat com amigo secreto</p>
+                        </div>
+            
+                        <div class="chat" id="chat">
+                            <div class="message">
+                                <div class="messageSelf">Lisan al-Gaib</div>
+                                <div class="messageOther">Gato</div>
+                                <div class="messageSelf">Lisan al-Gaib</div>
+                                <div class="messageOther">Gato</div>
+                                <div class="messageSelf">Lisan al-Gaib</div>
+                                <div class="messageOther">Gato</div>
+                                <div class="messageSelf">Lisan al-Gaib</div>
+                                <div class="messageOther">Gato</div>
+                                <div class="messageSelf">Lisan al-Gaib</div>
+                                <div class="messageOther">Gato</div>
+                                <div class="messageSelf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae voluptate delectus adipisci praesentium eveniet voluptatibus ad, impedit corrupti quibusdam eligendi?</div>
+                                <div class="messageOther">Gato</div>
+                            </div>
+                        </div>
+                        <form class="chatForm">
+                            <input type="text" class="chatInput" placeholder=" Digite sua mensagem">
+                            <button type="submit" class="chatButton">
+                                <span class="material-symbols-outlined">send</span>
+                            </button>
+                        </form>
                     </div>
-        
-                    <div class="chat" id="chat">
-                        <div class="message">
-                            <div class="messageSelf">Lisan al-Gaib</div>
-                            <div class="messageOther">Gato</div>
-                            <div class="messageSelf">Lisan al-Gaib</div>
-                            <div class="messageOther">Gato</div>
-                            <div class="messageSelf">Lisan al-Gaib</div>
-                            <div class="messageOther">Gato</div>
-                            <div class="messageSelf">Lisan al-Gaib</div>
-                            <div class="messageOther">Gato</div>
-                            <div class="messageSelf">Lisan al-Gaib</div>
-                            <div class="messageOther">Gato</div>
-                            <div class="messageSelf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae voluptate delectus adipisci praesentium eveniet voluptatibus ad, impedit corrupti quibusdam eligendi?</div>
-                            <div class="messageOther">Gato</div>
+                    <div class="showLista">
+                        <div class="chatLista">
+                            <p>Lista de presentes</p>
+                            <button class="presentLabel">Presente 1</button>
+                            <button class="presentLabel">Presente 2</button>
+                            <button class="presentLabel">Presente 3</button>
+                            <button class="presentLabel">Presente 4</button>
+                            <button class="presentLabel">Presente 5</button>
+                            <button class="presentLabel">Presente 6</button>
+                            <button class="presentLabel">Presente 7</button>
+                            <button class="presentLabel">Presente 8</button>
+                            <button class="presentLabel">Presente 9</button>
+                            <button class="presentLabel">Presente 10</button>
                         </div>
                     </div>
-                    <div class="chatForm">
-                        <input type="text" class="chatInput" placeholder=" Digite sua mensagem">
-                        <button type="submit" class="chatButton">
-                            <span class="material-symbols-outlined">send</span>
-                        </button>
-                    </div>
                 </div>
-                <div class="showLista">
-                    <div class="chatLista">
-                        <p>Lista de presentes</p>
-                        <button class="presentLabel">RTX 3090</button>
-                        <button class="presentLabel">s24 Ultra</button>
-                        <button class="presentLabel">LEGO Dune - 10327</button>
-                        <button class="presentLabel">s24 Ultra</button>
-                        <button class="presentLabel">LEGO Dune - 10327</button>
-                        <button class="presentLabel">RTX 3090</button>
-                        <button class="presentLabel">s24 Ultra</button>
-                        <button class="presentLabel">LEGO Dune - 10327</button>
-                        <button class="presentLabel">s24 Ultra</button>
-                        <button class="presentLabel">LEGO Dune - 10327</button>
-                    </div>
-                </div>
+    
+            </div>
+        </div>
+        
+        <div class="inicioContainerBottom">
+            <img class="logoBottom" src="assets/icon2.png">
+            <div id="titleBottom" onclick="recarregarPagina()">
+                <p>Amigo Secreto</p>
+            </div>
+            <div class="insta" onclick="openLink('https://www.instagram.com/lipz.png/')">
+                <i class="fa fa-instagram" style="font-size:48px"></i>
             </div>
 
         </div>
@@ -92,8 +106,18 @@
             var element = document.getElementById("chat");
             element.scrollTop = element.scrollHeight;
         }
-    
         window.onload = scrollToEnd;
+        
+        document.getElementById("buttonSmallComp").addEventListener("click", function(event) {
+            alert("Seu link de compartilhamento de grupo é:");
+        });
+
+        function recarregarPagina() {
+            location.reload(true); //true pra forçar a limpar cache
+        }
+        function openLink(url) {
+            window.open(url, '_blank');
+        }
     </script>
 
 </body>
