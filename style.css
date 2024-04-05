@@ -1,6 +1,8 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #212121;
+    color: #d6d6d6;
 }
 
 p {
@@ -56,9 +58,11 @@ p {
     font-weight: bold; 
     margin: 20px;
     padding: 10px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
+    color: #d6d6d6;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    background-color: #2b2b2b;
 }
 
 .campos{
@@ -79,10 +83,20 @@ p {
 }
 
 .textBox {
+    border: 2px solid #212121;
+    background-color: #414141;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    color: #d6d6d6;
+    outline: none;
     height: 20px;
     width: 230px;
-    border: 2px solid black;
+    border: none;
 }
+
+/* .textBox:hover {
+    background-color: #414141;
+} */
 
 #buttonAjust {
     margin-top: 40px;
@@ -92,11 +106,11 @@ p {
 .button {
     height: 40px;
     width: 100px;
-    color: white;
+    color: #212121;
     font-weight: bold;
     border: 0px;
     border-radius: 20px;
-    background-color: #2a3f29;
+    background-color: #8dafd3;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     transition: 0.2s ease;
 }
@@ -123,11 +137,11 @@ p {
 }
 
 a {
-    color: black;
+    color: #d6d6d6;
 }
 
 a:hover {
-    color: blue;
+    color: #8dafd3;
 }
 
 /*------------------------------------ Cria Grupo.css ------------------------------------*/
@@ -139,8 +153,8 @@ a:hover {
 }
 
 #criaContainer {
-    margin-top: 120px;
-    margin-left: 120px;
+    margin-top: 100px;
+    margin-left: 20px;
 }
 
 .title {
@@ -184,7 +198,9 @@ a:hover {
     margin-left: 80px;
     width: 50px;
     height: 50px;
-    border: 2px solid black; 
+    border: none; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    background-color: #414141;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -213,7 +229,7 @@ a:hover {
 
 #inicioContainerLeft {
     width: 250px;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-left: 60px;
 }
 
@@ -245,10 +261,11 @@ a:hover {
     height: 40px;
     width: 250px;
     margin-top: 10px;
-    font-weight: bold;
-    border: 2px solid black;
+    font-weight: 700;
+    border: none;
     border-radius: 20px;
-    background-color: white;
+    background-color: #414141;
+    color: #d6d6d6;
     cursor: pointer;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     transition: 0.2s ease;
@@ -256,6 +273,7 @@ a:hover {
 
 .participante:hover {
     transform: translateY(-3px);
+    color: #d6d6d6;
 }
 
 .pin {
@@ -283,7 +301,7 @@ a:hover {
 }
 
 #inicioContainerMiddle {
-    margin-top: 40px;
+    margin-top: 20px;
     margin-right: 60px;
 }
 
@@ -318,9 +336,10 @@ a:hover {
     margin-top: 20px;
     margin-right: 10px;
     font-weight: bold;
-    border: 2px solid black;
+    border: none;
     border-radius: 20px;
-    background-color: white;
+    background-color: #414141;
+    color: #d6d6d6;
     cursor: pointer;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     transition: 0.2s ease;
@@ -332,8 +351,9 @@ a:hover {
 
 .inicioContainerBottom {
     padding: 10px 20px;
-    border: 2px solid black;
+    border: none;
     border-radius: 20px;
+    background-color: #2b2b2b;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     margin: 20px 60px;
     display: flex;
@@ -344,6 +364,7 @@ a:hover {
 
 .logoBottom {
     width: 50px;
+    filter: invert(90%);
 }
 
 #titleBottom {
@@ -388,6 +409,7 @@ a:hover {
 #delButton {
     width: 120px;
     font-weight: bold;
+    color: #d6d6d6;
     background-color: #9c1e1e;
     margin-right: 1030px;
 }
@@ -436,9 +458,10 @@ a:hover {
     margin-top: 20px;
     margin-right: 10px;
     font-weight: bold;
-    border: 2px solid black;
+    border: none;
     border-radius: 20px;
-    background-color: white;
+    background-color: #414141;
+    color: #d6d6d6;
     cursor: pointer;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     transition: 0.2s ease;
@@ -458,7 +481,7 @@ a:hover {
 /*------------------------------------ Chat.css ------------------------------------*/
 
 #chatContainerMiddle {
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 20px;
     margin-right: 60px;
 }
@@ -491,7 +514,7 @@ a:hover {
 }
 
 .chat::-webkit-scrollbar-thumb {
-    background: #2a3f29;
+    background: #8dafd3;
     border-radius: 10px;
 }
 
@@ -517,17 +540,18 @@ a:hover {
 
 .chatInput {
     padding: 10px 20px;
-    border: 2px solid black;
+    border: none;
     border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
     flex-grow: 1;
+    background-color: #414141;
 }
 
 .chatButton {
     background: none;
     cursor: pointer;
     border: none;
-    color: black;
+    color: #d6d6d6;
 }
 
 .chatButton > span {
@@ -538,7 +562,7 @@ a:hover {
     padding: 10px 15px 10px 15px;
     width: 100%;
     max-width: 280px;
-    font-weight: 600;
+    font-weight: 700;
     margin-right: 10px;
     margin-bottom: 10px;
     line-height: 20px;
@@ -546,14 +570,15 @@ a:hover {
 }
 
 .messageSelf {
-    color: white;
-    background-color: #2a3f29;
+    color: #212121;
+    background-color: #8dafd3;
     border-radius: 20px 20px 0px 20px;
     align-self: flex-end;
 }
 
 .messageOther {
-    border: 2px solid black;
+    border: none;
+    background-color: #414141;
     border-radius: 20px 20px 20px 0px;
 }
 
@@ -570,9 +595,10 @@ a:hover {
     font-weight: bold; 
     margin: 20px 60px 20px 240px;
     padding:  10px 10px 10px 10px;
-    border: 2px solid black;
+    border: none;
     border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    background-color: #353535;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
     height: 650px;
@@ -591,9 +617,10 @@ a:hover {
     width: 270px;
     margin-bottom: 15px;
     font-weight: bold;
-    border: 2px solid black;
+    border: none;
     border-radius: 20px;
-    background-color: white;
+    background-color: #414141;
+    color: #d6d6d6;
     cursor: pointer;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     transition: 0.2s ease;
